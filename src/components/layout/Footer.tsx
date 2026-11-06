@@ -31,7 +31,8 @@ export function Footer() {
           </a>
           <a
             href={site.cv}
-            download
+            target="_blank"
+            rel="noreferrer"
             className="mono text-[12.5px] text-muted transition-colors hover:text-fg"
           >
             cv

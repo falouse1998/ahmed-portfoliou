@@ -43,8 +43,14 @@ export function Contact() {
             <ActionLink href={`mailto:${site.email}`} variant="solid" icon={<Glyph name="mail" />}>
               Send an email
             </ActionLink>
-            <ActionLink href={site.cv} download variant="outline" icon={<Glyph name="download" />}>
-              Download CV
+            <ActionLink
+              href={site.cv}
+              target="_blank"
+              rel="noreferrer"
+              variant="outline"
+              icon={<Glyph name="north" />}
+            >
+              View CV
             </ActionLink>
             <ActionLink
               href={site.linkedin}

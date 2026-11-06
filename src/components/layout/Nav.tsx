@@ -96,10 +96,11 @@ export function Nav() {
 
           <a
             href={site.cv}
-            download
+            target="_blank"
+            rel="noreferrer"
             className="ml-auto hidden h-9 shrink-0 items-center gap-2 rounded-full bg-fg px-4 text-[13.5px] font-medium text-bg transition-colors hover:bg-white md:inline-flex"
           >
-            <Glyph name="download" />
+            <Glyph name="north" />
             CV
           </a>
 
@@ -142,14 +143,15 @@ export function Nav() {
               ))}
               <motion.a
                 href={site.cv}
-                download
+                target="_blank"
+                rel="noreferrer"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.04 * nav.length, duration: 0.35 }}
                 className="mt-6 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-fg text-[15px] font-medium text-bg"
               >
-                <Glyph name="download" />
-                Download CV
+                <Glyph name="north" />
+                View CV
               </motion.a>
             </div>
           </motion.div>
